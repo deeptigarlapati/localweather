@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <mat-toolbar color="primary">
+    <span>Local Weather!</span>
+  </mat-toolbar>
+</div>
+<div>Your city, your forecast,right now!</div>
+<app-city-search (searchEvent)="doSearch($event)"></app-city-search>
+<mat-card>
+  <h2>Current Weather</h2>
+  <app-current-weather [current]="currentWeather"></app-current-weather>
+</mat-card>
+
